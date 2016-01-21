@@ -50,7 +50,7 @@ function top_damage.onStartRound(mode)
 			top_damage.resetPlayerDamages(id);
 		end
  	else
- 		local mvp = 1;
+ 		local mvp = player(0, "tableliving")[1];
 
  		for _, id in pairs(player(0, "tableliving")) do
  			if(top_damage.playerDamages[id]["round"] > 
